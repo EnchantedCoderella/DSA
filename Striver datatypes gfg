@@ -1,0 +1,57 @@
+https://www.geeksforgeeks.org/problems/data-type-1666706751/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=data-type
+
+
+//{ Driver Code Starts
+// Initial Template for Java
+
+import java.io.*;
+import java.lang.*;
+import java.math.*;
+import java.util.*;
+
+class GFG {
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        while (T-- > 0) {
+            sc.nextLine();
+            String s = sc.next();
+            Solution obj = new Solution();
+            int ans = obj.dataTypeSize(s);
+            String Character = "Character";
+            if (Character.equals(s) && ans == 2) {
+                ans = 1;
+            }
+            System.out.println(ans);
+        }
+    }
+}
+
+// } Driver Code Ends
+
+
+// User function Template for Java
+
+class Solution {
+    static int dataTypeSize(String str) {
+        // code here
+        int x = 0;
+        switch(str){
+            case "Character":
+               x=1;
+               break;
+            case "Integer":
+               x=4;
+               break; 
+            case "Long":
+               x=8;
+               break;
+            case "Float":
+               x=4;
+               break;
+            default:
+               x=8;
+        }
+        return x;
+    }
+}
