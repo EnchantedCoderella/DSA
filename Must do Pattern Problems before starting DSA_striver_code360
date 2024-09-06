@@ -1,4 +1,6 @@
-//https://www.naukri.com/code360/problems/n-forest_6570177?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+1----->   //https://www.naukri.com/code360/problems/n-forest_6570177?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+
+N-Forest
 
 public class Solution {
     public static void nForest(int n) {
@@ -12,7 +14,15 @@ public class Solution {
     }
 }
 
-//https://www.naukri.com/code360/problems/n-2-forest_6570178?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+OUTPUT
+* * *
+* * *
+* * *
+
+
+2----->  //https://www.naukri.com/code360/problems/n-2-forest_6570178?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+
+N/2-Forest
 
 public class Solution {
     public static void nForest(int n) {
@@ -26,7 +36,17 @@ public class Solution {
     }
 }
 
-//https://www.naukri.com/code360/problems/n-triangles_6573689?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+OUTPUT
+* 
+* *
+* * *
+
+
+
+
+3----->   //https://www.naukri.com/code360/problems/n-triangles_6573689?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+
+N-Triangles
 
 public class Solution {
     public static void nTriangle(int n) {
@@ -43,7 +63,17 @@ public class Solution {
     }
 }
 
-//https://www.naukri.com/code360/problems/triangle_6573690?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+OUTPUT
+1
+1 2 
+1 2 3
+
+
+
+
+4----->  //https://www.naukri.com/code360/problems/triangle_6573690?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+
+Triangle
 
 public class Solution {
     public static void nTriangle(int n) {
@@ -59,7 +89,17 @@ public class Solution {
     }
 }
 
-//https://www.naukri.com/code360/problems/seeding_6581892?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+OUTPUT
+1
+2 2 
+3 3 3
+
+
+
+
+5----->   //https://www.naukri.com/code360/problems/seeding_6581892?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+
+Seeding
 
 public class Solution {
     public static void seeding(int n) {
@@ -73,7 +113,16 @@ public class Solution {
     }
 }
 
-//https://www.naukri.com/code360/problems/reverse-number-triangle_6581889?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+OUTPUT
+* * *
+* *
+*
+
+
+
+6----->   //https://www.naukri.com/code360/problems/reverse-number-triangle_6581889?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+
+Reverse Number Triangle
 
 public class Solution {
     public static void nNumberTriangle(int n) {
@@ -89,6 +138,144 @@ public class Solution {
         }
     }
 }
+OUTPUT
+1 2 3
+1 2
+1
 
 
-//https://www.naukri.com/code360/problems/star-triangle_6573671?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+
+7----->   //https://www.naukri.com/code360/problems/star-triangle_6573671?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Star Triangle
+
+public class Solution {
+    public static void nStarTriangle(int n) {
+        // Write your< code here
+        for(int i=0;i<n;i++){
+            for(int x=0;x<n-i-1;x++){
+                System.out.print(" ");
+            }
+            for(int y=0;y<2*i+1;y++){
+                System.out.print("*");
+            }
+            for(int x=0;x<n-i-1;x++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT
+  *
+ ***
+*****
+
+
+
+8----->   //https://www.naukri.com/code360/problems/reverse-star-triangle_6573685?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Reverse Star Triangle
+
+public class Solution {
+    public static void nStarTriangle(int n) {
+        // Write your code here
+        for(int i=n;i>0;i--){
+            for(int x=0;x<n-i;x++){
+                System.out.print(" ");
+            }
+            for(int y=0;y<2*i-1;y++){
+                System.out.print("*");
+            }
+            for(int x=0;x<n-i;x++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT
+*****
+ ***
+  *
+
+
+
+9----->   //https://www.naukri.com/code360/problems/star-diamond_6573686?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+ Star Diamond
+
+public class Solution {
+    public static void nStarDiamond(int n) {
+        // Write your code here
+        for(int i=0;i<n;i++){
+            for(int x=0;x<n-i-1;x++){
+                System.out.print(" ");
+            }
+            for(int y=0;y<2*i+1;y++){
+                System.out.print("*");
+            }
+            for(int x=0;x<n-i-1;x++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+        for(int i=n;i>0;i--){
+            for(int x=0;x<n-i;x++){
+                System.out.print(" ");
+            }
+            for(int y=0;y<2*i-1;y++){
+                System.out.print("*");
+            }
+            for(int x=0;x<n-i;x++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT
+  *
+ ***
+*****
+*****
+ ***
+  *
+
+
+
+10----->   https://www.naukri.com/code360/problems/rotated-triangle_6573688?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Rotated Triangle
+
+public class Solution {
+    public static void nStarTriangle(int n) {
+        // Write your code here
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i+1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=n-1;i>0;i--){
+            for(int j=0;j<i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT
+*
+**
+***
+**
+*
+
+
+
