@@ -279,3 +279,87 @@ OUTPUT
 
 
 
+19-----> https://www.naukri.com/code360/problems/symmetric-void_6581919?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+ Symmetric Void
+
+public class Solution {
+    public static void symmetry(int n) {
+        // Write your code here
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-i;j++){
+                System.out.print("* ");
+            }
+            for(int k=0;k<2*i;k++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<n-i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        for(int l=0;l<n;l++){
+            for(int x=0;x<l+1;x++){
+                System.out.print("* ");
+            }
+            for(int y=0;y<2*n-2*l-2;y++){
+                System.out.print(" ");
+            }
+            for(int x=0;x<l+1;x++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT
+* * * * * * 
+* *     * * 
+*         * 
+*         * 
+* *     * * 
+* * * * * * 
+
+
+20-----> https://www.naukri.com/code360/problems/symmetry_6581914?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Symmetry
+
+public class Solution {
+    public static void symmetry(int n) {
+        // Write your code here
+        for(int l=0;l<n;l++){
+            for(int x=0;x<l+1;x++){
+                System.out.print("* ");
+            }
+            for(int y=0;y<2*n-2*l-2;y++){
+                System.out.print(" ");
+            }
+            for(int x=0;x<l+1;x++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i=1;i<n;i++){
+            for(int j=0;j<n-i;j++){
+                System.out.print("* ");
+            }
+            for(int k=0;k<2*i;k++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<n-i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT
+*         *
+* *     * *
+* * * * * *
+* *     * *
+*         *
