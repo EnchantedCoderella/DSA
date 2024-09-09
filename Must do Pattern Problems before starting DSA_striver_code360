@@ -278,6 +278,238 @@ OUTPUT
 *
 
 
+11-----> https://www.naukri.com/code360/problems/binary-number-triangle_6581890?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Binary Number Triangle
+
+public class Solution {
+    public static void nBinaryTriangle(int n) {
+        // Write your code here.
+        int start = 1;
+        for(int i=0;i<n;i++){
+            if(i%2==0){
+                for(int j=0;j<=i;j++){
+                    if(j%2==0){
+                        start = 1;
+                        System.out.print(start+" ");
+                    }
+                    else{
+                        start=0;
+                        System.out.print(start+" ");
+                    }
+                }
+                System.out.println();
+            }
+            else{
+               for(int j=0;j<=i;j++){
+                    if(j%2==0){
+                        start = 0;
+                        System.out.print(start+" ");
+                    }
+                    else{
+                        start=1;
+                        System.out.print(start+" ");
+                    }
+                }
+                System.out.println(); 
+            }
+        }
+    }
+}
+
+OUTPUT
+1
+0 1
+1 0 1
+
+
+
+12-----> https://www.naukri.com/code360/problems/number-crown_6581894?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Number Crown
+
+public class Solution {
+    public static void numberCrown(int n) {
+        // Write your code here.
+        for(int i=0;i<n;i++){
+            for(int x=0;x<i+1;x++){
+                System.out.print(x+1+" ");
+            }
+            for(int y=0;y<2*(n-i)-2;y++){
+                System.out.print(" ");
+            }
+            for(int x=i+1;x>0;x--){
+                System.out.print(x+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT
+1         1
+1 2     2 1
+1 2 3 3 2 1
+
+
+
+13-----> https://www.naukri.com/code360/problems/increasing-number-triangle_6581893?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Increasing Number Triangle
+
+public class Solution {
+    public static void nNumberTriangle(int n) {
+        // Write your code here
+        int a=1;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i+1;j++){
+                System.out.print((a++)+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT
+1
+2 3
+4 5 6
+
+
+
+
+14-----> https://www.naukri.com/code360/problems/increasing-letter-triangle_6581897?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Increasing Letter Triangle
+
+public class Solution {
+    public static void nLetterTriangle(int n) {
+        // Write your code here
+        for(int i=0;i<n;i++){
+            for(char ch='A';ch<='A'+i;ch++){
+                System.out.print(ch+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT
+A
+A B
+A B C
+
+
+
+
+15----->   https://www.naukri.com/code360/problems/reverse-letter-triangle_6581906?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Reverse Letter Triangle
+
+public class Solution {
+    public static void nLetterTriangle(int n) {
+        // Write your code here
+        for(int i=n;i>0;i--){
+            for(char ch='A';ch<'A'+i;ch++){
+                System.out.print(ch+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+Output: 
+
+A B C
+A B
+A
+
+
+
+16-----> https://www.naukri.com/code360/problems/alpha-ramp_6581888?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Alpha-Ramp
+
+public class Solution {
+    public static void alphaRamp(int n) {
+        // Write your code here
+        char ch = 'A';
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print(ch+" ");
+            }
+            ch++;
+            System.out.println();
+        }
+    }
+}
+
+Output: 
+A
+B B
+C C C
+
+
+
+
+17-----> https://www.naukri.com/code360/problems/alpha-hill_6581921?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Alpha Hill
+
+public class Solution {
+    public static void alphaHill(int n) {
+        // Write your code here
+        for(int i=0;i<n;i++){
+            for(int j=0;j<2*(n-i-1);j++){
+                System.out.print(" ");
+            }
+            char ch = 'A';
+            for(int j=1;j<=2*i+1;j++){
+                
+                System.out.print(ch+" ");
+                if(j<=(2*i+1)/2) ch++;
+                else ch--;
+            }
+            // for(int j=0;j<2*(n-1);j++){
+            //     System.out.print(" ");
+            // }
+            System.out.println();
+        }
+    }
+}
+
+Output: 
+    A
+  A B A
+A B C B A
+
+18-----> https://www.naukri.com/code360/problems/alpha-triangle_6581429?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Alpha-Triangle
+
+public class Solution {
+    public static void alphaTriangle(int n) {
+        // Write your code here
+        int s = n-1;
+        for(int i=0;i<n;i++){
+            
+            for(char ch=(char)('A'+s);ch>= 'A'+s-i;ch--){               // note - incompatible types ki probelm ko solve krne ke liye char ka use krenge
+                System.out.print(ch+" ");
+                
+            }
+            System.out.println();
+        }
+    }
+}
+
+Output: 
+C
+C B 
+C B A
+
+
+
+
 
 19-----> https://www.naukri.com/code360/problems/symmetric-void_6581919?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
 
@@ -363,3 +595,41 @@ OUTPUT
 * * * * * *
 * *     * *
 *         *
+
+
+
+
+21-----> https://www.naukri.com/code360/problems/ninja-and-the-star-pattern-i_6581920?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems
+
+Ninja And The Star Pattern I
+
+public class Solution {
+    public static void getStarPattern(int n) {
+        // Write your code here
+        if(n==1){
+            System.out.print("*");
+        } else{
+            for(int i=0;i<n;i++){
+            System.out.print("*");
+        }
+        System.out.println();
+        for(int j=0;j<n-2;j++){
+            System.out.print("*");
+            for(int k=0;k<n-2;k++){
+                System.out.print(" ");
+            }
+            System.out.print("*\n");
+        }
+        for(int i=0;i<n;i++){
+            System.out.print("*");
+        }
+        }
+    }
+}
+
+Output: 
+
+****
+*  *
+*  *
+****
