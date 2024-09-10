@@ -1,0 +1,14 @@
+//https://www.naukri.com/code360/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse
+
+
+public class Solution {
+    public static int missingNumber(int []a, int N) {
+        // Write your code here.
+        int sum = N*(N+1)/2;
+        int newsum=0;
+        for(int i:a){
+            newsum +=i;
+        }
+        return sum-newsum;
+    }
+}
